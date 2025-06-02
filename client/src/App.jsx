@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 import {Login} from './components/login.jsx'
-import {Home} from './components/home.jsx'
+import {Home} from './Home.jsx'
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
   return (
     username?(
-      <Home/>
+      <Home username={username}/>
     ):(
       <Login onSubmit={setUsername} />
     )
